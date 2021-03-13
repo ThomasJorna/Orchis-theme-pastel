@@ -52,6 +52,7 @@
     @if ($theme == 'yellow') { @return $yellow-700; }
     @if ($theme == 'green') { @return $green-500; }
     @if ($theme == 'grey') { @return $grey-700; }
+    @if ($theme == 'pastel') {@return $pastel-400}
   } @else {
     @if ($theme == 'default') { @return #3281ea; }
     @if ($theme == 'purple') { @return $purple-300; }
@@ -61,6 +62,7 @@
     @if ($theme == 'yellow') { @return $yellow-a700; }
     @if ($theme == 'green') { @return $green-400; }
     @if ($theme == 'grey') { @return $grey-600; }
+    @if ($theme == 'pastel') {@return $pastel-200}
   }
 }
 
@@ -71,23 +73,23 @@
 $primary:                               theme(color);
 $drop_target_color:                     #FF7043;
 
-$background:                            if($variant == 'light', #F2F2F2, #212121);
-$surface:                               if($variant == 'light', #FFFFFF, #3C3C3C);
-$base:                                  if($variant == 'light', #FFFFFF, #2C2C2C); // semi-surface with 1dp elevation
-$base-alt:                              if($variant == 'light', #FAFAFA, #242424);
+$background:                            if($variant == 'light', #F2F2F2, #2f3442);
+$surface:                               if($variant == 'light', #FFFFFF, #363F57);
+$base:                                  if($variant == 'light', #FFFFFF, #2f3442); // semi-surface with 1dp elevation
+$base-alt:                              if($variant == 'light', #FAFAFA, #252934);
 
-$os-background:                         #212121;
-$tooltip:                               rgba(#616161, 0.9);
+$os-background:                         #2f3442;
+$tooltip:                               rgba(#59637B, 0.9);
 $scrim:                                 rgba(black, 0.6);
 $scrim-alt:                             rgba(black, 0.3);
 $scrim-inverse:                         rgba(white, 0.1);
-$titlebar:                              if($topbar == 'dark', #2C2C2C, #FFFFFF);
-$titlebar-backdrop:                     if($topbar == 'dark', #2C2C2C, #FFFFFF);
-$titlebar-decoration:                   if($topbar == 'dark', #2C2C2C, #FFFFFF);
-$titlebar-decoration-backdrop:          if($topbar == 'dark', #2C2C2C, #FFFFFF);
+$titlebar:                              if($topbar == 'dark', #2f3442, #FFFFFF);
+$titlebar-backdrop:                     if($topbar == 'dark', #2f3442, #FFFFFF);
+$titlebar-decoration:                   if($topbar == 'dark', #2f3442, #FFFFFF);
+$titlebar-decoration-backdrop:          if($topbar == 'dark', #2f3442, #FFFFFF);
 
-$panel:                                 if($topbar == 'dark', #1F1F1F, $scrim);
-$panel-solid:                           if($topbar == 'dark', #1F1F1F, #CCCCCC); // for Unity panel which doesn't allow translucent colors
+$panel:                                 if($topbar == 'dark', #1B202C, $scrim);
+$panel-solid:                           if($topbar == 'dark', #1B202C, #CCCCCC); // for Unity panel which doesn't allow translucent colors
 
 //
 // Misc colors

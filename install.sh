@@ -16,7 +16,7 @@ else
 fi
 
 THEME_NAME=Orchis
-THEME_VARIANTS=('' '-purple' '-pink' '-red' '-orange' '-yellow' '-green' '-grey')
+THEME_VARIANTS=('''-purple' '-pink' '-red' '-orange' '-yellow' '-green' '-grey' '-pastel')
 COLOR_VARIANTS=('' '-light' '-dark')
 SIZE_VARIANTS=('' '-compact')
 
@@ -165,6 +165,10 @@ while [[ "$#" -gt 0 ]]; do
             themes+=("${THEME_VARIANTS[7]}")
             shift
             ;;
+	  pastel)
+	    themes+=("${THEME_VARIANTS[7]}")
+	    shift
+	    ;;
           all)
             themes+=("${THEME_VARIANTS[@]}")
             shift
